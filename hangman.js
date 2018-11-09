@@ -1,4 +1,3 @@
-public void
 const INITIAL_HEALTH = 6;
 
 var health = INITIAL_HEALTH;
