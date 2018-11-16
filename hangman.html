@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Hangman Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="hangman.css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" ></script>
+    <script type="text/javascript" src="hangman.js"></script>
+</head>
+<body>
+    <h2>Hangman Game</h2>
+    <p>Spelers: 2</p>
+    <p>
+        <u>Instructies</u><br/>
+        P1: Speler 1 moet het geheime woord invullen, druk daarna op start game.<br/>
+        P2: Speler 2 moet het woord proberen te raden door het in te typen of op de letters te drukken.
+            <br>Je hebt maximaal 6 levens.</br>
+            <br>Als de letter goed is, dan wordt het ingevuld anders verlies je een leven.</br>
+            <br>Woord geraden? dan win je het spel.</br>
+    </p>
+    <div id="inputGuessWord">
+        <input type="password" id="guessWord" />
+        <button id="btnSubmit">Start spel</button>
+    </div>
+    <div id="hangmanContainer">
+        <div id="hangman-img-container">
+            <b>&nbsp;O</b><br/>
+            <b>/&nbsp;</b>
+            <b>|&nbsp;</b>
+            <b>\</b><br/>
+            <b>/&nbsp;</b>
+            <b>\</b>
+        </div>
+        <div id="guessContainer">
+            <div class="guessingWordContainer"></div>
+            <label>Klik op een letter/Typ een letter in</label>
+            <div class="tryLetters"></div>
+        </div>
+    </div>
+</body>
+</html>
